@@ -15,7 +15,8 @@ nav {
   width: 100%;
 }
 
-nav ul li a {
+nav ul li a,
+a {
   color: #000;
   text-decoration: none;
   transition: all 0.3s;
@@ -396,4 +397,10 @@ footer {
 .bi {
   margin: 0 25px 0 0;
   font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #accordionExample {
+    margin: 20px 55px 55px;
+  }
 }
