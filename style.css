@@ -1,0 +1,396 @@
+/* Yellow #fcc217 */
+
+* {
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav {
+  background-color: #fff;
+  position: fixed;
+  padding: 20px 60px;
+  left: -5px;
+  z-index: 999;
+  width: 100%;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#navLinks {
+  float: right;
+  padding-left: 600px;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #0070dc;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  color: #0070dc;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 3px;
+  margin-top: -8px;
+  background: #0070dc;
+  transition: 0.5s;
+}
+
+.nav-link:hover::before,
+.nav-link:focus::before {
+  width: 100%;
+}
+
+.bg-body-tertiary {
+  margin-top: 0;
+  padding: 10px 60px;
+  top: 0;
+  background-color: #fff;
+}
+
+.login {
+  border-radius: 8px;
+  padding: 5px;
+  width: 8%;
+  margin-right: 20px;
+  letter-spacing: 1px;
+  border: 2px solid #0070dc;
+  background-color: #fff;
+  color: #0070dc;
+  font-weight: 600;
+}
+
+.login:hover {
+  color: #fff;
+  background-color: #0070dc;
+}
+
+.bi-search {
+  cursor: pointer;
+}
+
+#mainSec,
+#admissionSec {
+  background-image: url(images/mainSec.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 38, 74, 0.45);
+}
+
+.text,
+#admission_info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  line-height: 3.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.subtext {
+  font-size: 14px;
+  text-transform: none;
+  text-align: center;
+  line-height: 1.4rem;
+  margin-top: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.enroll_btn,
+.contact_btn {
+  border-radius: 5px;
+  font-size: 24px;
+  padding: 0px 40px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.enroll_btn {
+  background-color: #fcc217;
+  border: none;
+  color: #fff;
+}
+
+.contact_btn {
+  border: none;
+}
+
+.contact_btn:hover,
+.enroll_btn:hover {
+  background-color: #0070dc;
+  color: #fff;
+}
+
+#aboutSec,
+#admissionSec {
+  background-color: #e1eaf1;
+  color: #1d4366;
+  padding: 20px;
+}
+
+#admissionSec {
+  background-image: url(images/13.png);
+  margin-top: 50px;
+  padding: 0;
+}
+
+.subT {
+  margin-bottom: 0;
+  margin-left: 0;
+  font-weight: 600;
+}
+
+.subH {
+  color: #fcc217;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.sub {
+  margin: 0;
+  padding: 30px 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: none;
+  font-weight: 400;
+  line-height: 1.4rem;
+}
+
+.adm_overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 38, 74, 0.85);
+}
+
+#admission_info {
+  font-size: 45px;
+  letter-spacing: 1px;
+  text-transform: none;
+  font-weight: 600;
+  line-height: 2rem;
+  /* padding-bottom: 15px; */
+}
+
+.sub_headings {
+  font-size: 35px;
+  margin: 30px 0;
+  font-style: oblique;
+  /* position: relative; */
+  /* display: inline-block; */
+  text-align: center;
+  /* text-decoration: underline; */
+}
+
+.lineContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -25px;
+  padding-bottom: 30px;
+}
+
+.line {
+  width: 6%;
+  border: 3px solid #fcc217;
+}
+
+.start_learning,
+.apply {
+  border-radius: 5px;
+  background-color: #0070dc;
+  color: #fff;
+  padding: 12px;
+  border: 2px solid #0070dc;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.start_learning:hover {
+  background-color: #fff;
+  color: #0070dc;
+  border: 2px solid #0070dc;
+  cursor: pointer;
+}
+
+.apply {
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  background-color: #fcc217;
+  border: 2px solid #fcc217;
+}
+
+.apply:hover {
+  background-color: #fff;
+  color: #fcc217;
+  border: 2px solid #fcc217;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 60px;
+  grid-gap: 65px;
+  text-align: justify;
+  line-height: 2;
+  padding: 20px 0 60px;
+}
+
+.grid-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 70vh; */
+}
+
+.grid-2 {
+  /* align-items: center; */
+  margin-top: 3rem;
+  font-weight: 500;
+}
+
+.school_picx {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+/* .sub_headings::after { */
+/* content: ""; */
+/* position: absolute; */
+/* left: 0; */
+/* bottom: -5px; Adjust the distance of the underline from the heading */
+/* width: 100%; */
+/* height: 10px; Adjust the thickness of the underline */
+/* background-image: url("images/arrow.png"); Replace 'hand-drawn-arrow.png' with the path to your hand-drawn arrow image */
+/* background-repeat: repeat-x; */
+/* background-size: contain; */
+/* } */
+
+.card {
+  display: inline-block;
+  margin: 10px;
+}
+
+.card img {
+  background-position: center;
+  background-size: contain;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: #0070dc;
+  border: none;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #0070dc;
+  border: 2px solid #0070dc;
+}
+
+footer {
+  background-color: #1d4366;
+  color: #fff;
+  padding: 30px 65px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 60px;
+  grid-gap: 105px;
+  text-align: left;
+  line-height: 1.5;
+  padding: 20px 0 30px;
+}
+
+.contact_details {
+  margin-left: 20px;
+  letter-spacing: 1px;
+  padding: 5px;
+  font-weight: 400px;
+  font-size: 12px;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer_content {
+  font-size: 12px;
+  padding-bottom: -50px;
+  letter-spacing: 1px;
+  margin: 0 0 7px;
+}
+
+.bi {
+  margin: 0 25px 0 0;
+  font-size: 20px;
+}
