@@ -24,7 +24,7 @@ a {
 
 #navLinks {
   float: right;
-  padding-left: 600px;
+  padding-left: 500px;
 }
 
 .nav-link {
@@ -312,6 +312,7 @@ nav ul li {
 .card {
   display: inline-block;
   margin: 10px;
+  flex: 0 0 auto;
 }
 
 .card img {
@@ -321,8 +322,13 @@ nav ul li {
 
 .cardContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.cardContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .btn-primary {
@@ -339,6 +345,49 @@ nav ul li {
 
 #accordionExample {
   margin: 20px 200px 55px;
+}
+
+#coursesSec {
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px;
+  margin: 0 10px;
+}
+
+/* Slider */
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: -10%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 9;
+}
+
+.pre-btn {
+  left: 0;
+  /* transform: rotate(180deg); */
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn i,
+.nxt-btn i {
+  font-size: 25px;
+  opacity: 0.2;
+}
+
+.pre-btn:hover i,
+.nxt-btn:hover i {
+  opacity: 1;
 }
 
 footer {
@@ -436,5 +485,14 @@ footer {
 
   #accordionExample {
     margin: 20px 55px 55px;
+  }
+
+  .cardContainer {
+    margin-top: 25px;
+  }
+
+  .pre-btn i,
+  .nxt-btn i {
+    display: none;
   }
 }
