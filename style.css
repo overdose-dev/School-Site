@@ -462,14 +462,13 @@ footer {
   .text {
     text-transform: capitalize;
     font-size: 45px;
-    line-height: 3rem;
-    margin: 5px 0;
+    margin: 0;
   }
 
   .subtext {
     padding: 10px 35px;
     text-align: justify;
-    margin-bottom: 10px;
+    margin: 30px 30px;
   }
 
   .enroll_btn,
