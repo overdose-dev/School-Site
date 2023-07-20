@@ -461,7 +461,6 @@ footer {
     margin-bottom: 10px;
   }
 
-
   .enroll_btn,
   .contact_btn {
     margin: 15px 0;
@@ -520,5 +519,49 @@ footer {
 
   .cardContainer {
     margin-top: 25px;
+  }
+
+  #admission_info {
+    font-size: 35px;
+    line-height: 2.8rem;
+    padding: 10px 15px;
+  }
+
+  #admission_info .subH {
+    line-height: 1.8rem;
+    margin: 10px 0;
+  }
+
+  .sub {
+    text-align: center;
+    margin: 35px 30px 20px;
+    padding: 0;
+  }
+
+  .apply {
+    padding: 3px 25px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .contact_details {
+    text-align: left;
+  }
+
+  .grid-f4 h3 {
+    margin-top: 60px;
+    font-weight: 600;
+  }
+
+  .grid-f4 .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons {
+    margin-left: 15px;
   }
 }

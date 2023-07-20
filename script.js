@@ -1,3 +1,4 @@
+// Courses Scroll Bar
 const cardContainers = [...document.querySelectorAll(".cardContainer")];
 const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
 const preBtn = [...document.querySelectorAll(".pre-btn")];
