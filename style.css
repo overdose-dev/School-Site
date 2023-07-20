@@ -24,7 +24,7 @@ a {
 
 #navLinks {
   float: right;
-  padding-left: 500px;
+  padding-left: 550px;
 }
 
 .nav-link {
@@ -220,7 +220,6 @@ nav ul li {
   text-transform: none;
   font-weight: 600;
   line-height: 2rem;
-  /* padding-bottom: 15px; */
 }
 
 .sub_headings {
@@ -313,6 +312,8 @@ nav ul li {
   display: inline-block;
   margin: 10px;
   flex: 0 0 auto;
+  width: 19rem;
+  overflow: hidden;
 }
 
 .card img {
@@ -372,7 +373,6 @@ nav ul li {
 
 .pre-btn {
   left: 0;
-  /* transform: rotate(180deg); */
 }
 
 .nxt-btn {
@@ -433,6 +433,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .bg-body-tertiary {
+    padding: 10px 10px;
+    width: 100%;
+  }
+
   #navLinks {
     padding: 0;
   }
@@ -443,13 +448,25 @@ footer {
     width: 20%;
   }
 
+  .text {
+    text-transform: capitalize;
+    font-size: 45px;
+    line-height: 3rem;
+    margin: 5px 0;
+  }
+
+  .subtext {
+    padding: 10px 35px;
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+
+
   .enroll_btn,
   .contact_btn {
-    border-radius: 5px;
-    padding: 0px 40px;
     margin: 15px 0;
-    font-weight: 600;
-    width: 40vw;
+    width: 60vw;
+    margin: 5px 0;
   }
 
   .lineContainer {
@@ -461,7 +478,7 @@ footer {
   }
 
   #aboutSec {
-    padding: 20px 40px;
+    padding: 15px 40px;
   }
 
   .grid-container {
@@ -475,6 +492,8 @@ footer {
 
   .grid-2 {
     margin: 30px 0 0;
+    line-height: 1.5;
+    font-weight: 200;
   }
 
   .center-button {
@@ -483,16 +502,23 @@ footer {
     margin-top: 20px;
   }
 
+  .card {
+    width: 15rem;
+  }
+
+  .card img {
+    height: 25vh;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
   #accordionExample {
-    margin: 20px 55px 55px;
+    margin: 35px 20px;
   }
 
   .cardContainer {
     margin-top: 25px;
-  }
-
-  .pre-btn i,
-  .nxt-btn i {
-    display: none;
   }
 }
