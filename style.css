@@ -28,7 +28,7 @@ a {
 }
 
 .nav-link {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -47,7 +47,7 @@ nav ul li {
 .navbar-brand {
   text-decoration: none;
   color: #0070dc;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -162,7 +162,7 @@ nav ul li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 1px;
   color: white;
   text-transform: uppercase;
@@ -173,7 +173,7 @@ nav ul li {
 }
 
 .subtext {
-  font-size: 20px;
+  font-size: 18px;
   text-transform: none;
   text-align: center;
   line-height: 2rem;
@@ -185,7 +185,7 @@ nav ul li {
 .enroll_btn,
 .contact_btn {
   border-radius: 5px;
-  font-size: 24px;
+  font-size: 22px;
   padding: 0px 40px;
   margin: 0;
   font-weight: 600;
@@ -228,7 +228,7 @@ nav ul li {
 
 .subH {
   color: #fcc217;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   margin: 15px 0;
 }
@@ -237,7 +237,7 @@ nav ul li {
   padding: 30px 0;
   letter-spacing: 1px;
   text-transform: none;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2rem;
   margin: 25px 140px;
   font-weight: normal;
@@ -253,7 +253,7 @@ nav ul li {
 }
 
 #admission_info {
-  font-size: 45px;
+  font-size: 40px;
   letter-spacing: 1px;
   text-transform: none;
   font-weight: 600;
@@ -261,7 +261,7 @@ nav ul li {
 }
 
 .sub_headings {
-  font-size: 35px;
+  font-size: 32px;
   margin: 30px 0;
   font-style: oblique;
   text-align: center;
@@ -302,7 +302,7 @@ nav ul li {
 .apply {
   border-radius: 4px;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1px;
   background-color: #fcc217;
   border: 2px solid #fcc217;
@@ -485,7 +485,6 @@ footer {
   transform: translate(-50%, -50%);
   width: 550px;
   border-radius: 10px;
-  padding: 10px;
   text-align: center;
   padding: 35px 0;
 }
@@ -519,7 +518,7 @@ footer {
 }
 
 .login-container form button {
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   letter-spacing: 1px;
   background-color: #0070dc;
@@ -530,6 +529,39 @@ footer {
   box-shadow: 0 0 0 2px #acd4fa;
   background-color: #1281e9;
   transition: all 200ms ease-out;
+}
+
+@media (min-width: 2500px) {
+  .login-container {
+    width: 800px;
+    border-radius: 14px;
+    padding: 40px 0;
+  }
+
+  .login-container form {
+    padding: 40px 0;
+  }
+
+  .login-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .login-container p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .login-container form input,
+  .login-container form button {
+    margin: 15px;
+    padding: 25px 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .login-container form input:focus {
+    outline: 4px solid #acd4fa;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -553,7 +585,7 @@ footer {
   }
 
   .grid-2 {
-    font-size: 24px;
+    font-size: 22px;
     margin: 25px;
   }
 
@@ -565,6 +597,12 @@ footer {
 
   .lineContainer {
     padding-bottom: 5px;
+  }
+
+  .start_learning {
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 8px 15px;
   }
 
   #accordionExample {
@@ -594,6 +632,19 @@ footer {
   .icons {
     margin-left: 15px;
   }
+
+  .bi {
+    margin: 0 5px 0 0;
+    font-size: 15px;
+  }
+
+  .contact-container .icons i {
+    margin: 0 15px 0 0;
+  }
+
+  .contact_details {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -620,7 +671,7 @@ footer {
 
   .text {
     text-transform: capitalize;
-    font-size: 45px;
+    font-size: 40px;
     margin: 0;
   }
 
@@ -678,7 +729,7 @@ footer {
   }
 
   .card-text {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   #accordionExample {
@@ -690,7 +741,7 @@ footer {
   }
 
   #admission_info {
-    font-size: 35px;
+    font-size: 32px;
     line-height: 2.8rem;
     padding: 10px 15px;
   }
@@ -731,5 +782,18 @@ footer {
 
   .icons {
     margin-left: 15px;
+  }
+}
+
+@media (max-width: 430px) {
+  .login-container {
+    width: 350px;
+    padding: 20px 0;
+  }
+
+  .login-container form input,
+  .login-container form button {
+    padding: 12px 8px;
+    width: 86%;
   }
 }
